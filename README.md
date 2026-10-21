@@ -90,7 +90,7 @@ Tested on Python 3.12 with a single 8 GB NVIDIA GPU. TODO: add your exact torch 
 Weights are hosted on the Hugging Face Hub (TODO: replace with your repo id):
 ```python
 from huggingface_hub import snapshot_download
-snapshot_download("YOUR_HF_USERNAME/YOUR_MODEL_REPO", local_dir="checkpoints/qwen05b_s2st")
+snapshot_download("PRIYANSHUDHAKED/soon_I_will_upload_the_weights_on_hf", local_dir="checkpoints/qwen05b_s2st")
 ```
 The folder must contain `model.safetensors`, `config.json`, tokenizer files **and `vocab_spec.json`**.
 
@@ -100,7 +100,7 @@ The model needs the transcript of the source audio. Any ASR works, for example W
 import whisper
 print(whisper.load_model("small").transcribe("english.wav", language="en")["text"])   # use "hi" for Hindi
 ```
-
+moonshine is best due to it's light weight for english to hindi.
 ### 3. Translate
 ```bash
 # English -> Hindi
