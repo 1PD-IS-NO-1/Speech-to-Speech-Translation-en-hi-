@@ -1,0 +1,18 @@
+# TODO before publishing: pin the versions you actually used, e.g.
+#   pip freeze | grep -iE "^(torch|transformers|accelerate|peft|safetensors|soundfile|sacrebleu)=="
+torch
+transformers
+accelerate
+peft
+safetensors
+soundfile
+sacrebleu
+
+
+# MioCodec (provides the `miocodec` Python module used for encode/decode):
+#   install it following the instructions on its model page:
+#   https://huggingface.co/Aratako/MioCodec-25Hz-24kHz
+
+# Optional
+# openai-whisper      # ASR to produce --src_text at inference time
+# bitsandbytes        # 8-bit Adam (--optim adamw_bnb_8bit)
